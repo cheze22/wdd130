@@ -1,0 +1,182 @@
+/* CSS Variables */
+:root {
+    --primary-color: #2E5266;
+    --secondary-color: #6B9AC4;
+    --accent1-color: #97BC62;
+    --accent2-color: #E8DCC6;
+    --heading-font: 'Georgia', serif;
+    --body-font: 'Arial', sans-serif;
+}
+
+/* Universal Selector Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* Page Width and Centering */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+}
+
+/* Basic Element Styling */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 10px 15px;
+    border-radius: 8px;
+    border: 3px solid var(--secondary-color);
+}
+
+.hero article p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Main Sections */
+main section {
+    background-color: var(--accent2-color);
+    margin: 20px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+main section p {
+    text-align: justify;
+    color: var(--primary-color);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Social Media Icons */
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
