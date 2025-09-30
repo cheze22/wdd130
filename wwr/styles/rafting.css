@@ -1,11 +1,11 @@
 /* Variables de colores */
 :root {
-    --primary-color: #004d40; /* Verde oscuro */
-    --secondary-color: #00796b; /* Verde medio */
-    --accent1-color: #e0f2f1; /* Verde claro */
-    --accent2-color: #ffffff; /* Blanco */
-    --text-color: #333333; /* Gris oscuro */
-    --hover-color: #004d40; /* Color de hover */
+    --primary-color: #004d40; 
+    --secondary-color: #00796b; 
+    --accent1-color: #e0f2f1;
+    --accent2-color: #ffffff; 
+    --text-color: #333333; 
+    --hover-color: #004d40; 
 }
 
 /* General Reset */
@@ -65,10 +65,10 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 80px 20px; /* Aumentar el padding para más espacio interno */
+    padding: 80px 20px; 
     background: url('../images/hero-rafting.jpg') no-repeat center center/cover;
     color: var(--accent2-color);
-    height: 500px; /* Ajustar la altura para que sea más prominente */
+    height: 500px;
     position: relative;
 }
 
@@ -79,26 +79,26 @@ header nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Oscurecer el fondo */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
 .hero h1 {
-    font-size: 3rem; /* Aumentar el tamaño del título */
+    font-size: 3rem; 
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
 .hero p {
-    font-size: 1.4rem; /* Aumentar el tamaño del texto */
+    font-size: 1.4rem;
     margin-top: 10px;
     z-index: 2;
 }
 
 .hero button {
     margin-top: 20px;
-    padding: 12px 24px; /* Botón más grande */
+    padding: 12px 24px; 
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -253,7 +253,7 @@ footer .socialmedia img:hover {
 }
 
 .content img {
-    width: 40%; /* Ajustar el tamaño de la imagen */
+    width: 40%; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -285,4 +285,118 @@ footer .socialmedia img:hover {
 /* Reverse Layout for Alternating Sections */
 .content.reverse {
     flex-direction: row-reverse;
+}
+
+/* Contact Us Page Styling */
+
+/* Company Info Section */
+.company-info {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.company-info p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.company-info .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Team Profiles Section */
+.team-profiles {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-profiles h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.team-profiles .profiles {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team-profiles figure {
+    text-align: center;
+}
+
+.team-profiles img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-profiles figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Contact Form Section */
+.contact-form {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
 }
